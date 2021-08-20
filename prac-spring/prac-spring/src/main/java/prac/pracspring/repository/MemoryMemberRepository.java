@@ -1,9 +1,11 @@
 package prac.pracspring.repository;
 
+import org.springframework.stereotype.Repository;
 import prac.pracspring.domain.Member;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private Map<Long, Member> store =new HashMap<>();
